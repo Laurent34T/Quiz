@@ -1,0 +1,30 @@
+/******************** FONTS ***********************************************/
+/***** AVOCADO CREAMY ****************************/
+@font-face {
+    font-family: "avocado";
+    src: url("./fonts/avocado_creamy/Avocado\ Creamy.otf");
+}
+
+/***** AWESOME POSSUM ****************************/
+@font-face {
+    font-family: "possum"; /*Question*/
+    src: url("./fonts/awesome_possum_outline/Awesome\ Possum\ Outline\ Demo.otf");
+}
+
+/***** COCOLA ****************************/
+@font-face {
+    font-family: "cocola"; /*Button*/
+    src: url("./fonts/cocola/Cocola.ttf");
+}
+
+/***** COTTON BUTTER ****************************/
+@font-face {
+    font-family: "cotton";
+    src: url("./fonts/cotton_butter/Cotton\ Butter.ttf");
+}
+
+/***** KIDULT ****************************/
+@font-face {
+    font-family: "kidult";
+    src: url("./fonts/kidult/Kidult-Regular.ttf");
+}

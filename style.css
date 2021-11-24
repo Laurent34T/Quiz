@@ -1,0 +1,181 @@
+/* ||| Generale *******************************************************************/
+
+body {
+    background: url(./images/CUBE.png);
+    background-size: contain;
+}
+
+.container {
+    justify-content: flex-end;
+    height: 100vh;
+}
+
+/* ||| Main Screen ****************************************************************/
+.container > section {
+    position: relative;
+    width: 80%;
+    height: 70vh;
+    margin-bottom: 5rem;
+    padding-bottom: 5rem;
+    border-radius: 0.5rem;
+    box-shadow: 8px 8px 20px rgba(0, 0,0, 0.5),
+    -8px -8px 20px rgba(0, 0,0, 0.5);
+    background-color: white;
+}
+
+h2 {
+    padding: 1rem;
+    margin-bottom: 4rem;
+    font-size: 2.8rem;
+    border-radius: 1rem;
+    box-shadow: 0 -8px 0 inset maroon;
+    background-color: rgba(250, 246, 0, 0.7);
+}
+
+#form_answer {
+    width: 80%;
+    z-index: 100;
+}
+.radio {
+    width: 45%;
+    margin: 0.8rem;
+}
+.btn-secondary {
+    font-size: 1.5rem;
+    font-family: cocola;
+    color: black;
+    border: 5px solid #025cae;
+    border-radius: 0.8rem;
+    background-color: transparent;
+}
+.btn-secondary:hover {
+    border: 5px solid #025cae;
+    background-color: #0085ff;
+}
+
+/* Game Stats ******************************************/
+header {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+
+.information {
+    display: flex;
+    padding-right: 0.5rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+}
+.information img {
+    position: relative;
+    left: -2rem; top: -1rem;
+    width: 4rem;
+    height: 4rem;
+}
+.information p {
+    height: 100%;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.life {
+    border: 6px solid #e43838;
+    background-color: #d20202;
+}
+.score {
+    border: 6px solid #ffe352;
+    background-color: #ffb236;
+}
+.nb_question {
+    border: 6px solid #0085ff;
+    background-color: #025cae;
+}
+
+
+/* Screen Game ******************************************/
+main {
+    width: 90%;
+    height: 40vh;
+    border-radius: 2rem;
+}
+.good_answer {
+    background-color: green !important;
+}
+.wrong_answer {
+    background-color: red !important;
+}
+
+/* Button prev and next ******************************************/
+section#change_question {
+    position: absolute;
+    bottom: 12rem;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+section#change_question > img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+/* End screen - Game over ******************************************/
+/* Ecran score à la fin du jeu aprés les 10 questions */
+#fd_screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 3rem;
+    background-image: url(./images/fd_score.png);
+    background-size: cover;
+}
+#end {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    height: 80%;
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#end img:nth-child(1) {
+    position: absolute;
+    top: -7rem;
+}
+#end img:nth-child(2) {
+    width: 3rem;
+}
+#end p {
+    width: 8rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #008325;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 1);
+}
+#end button {
+    width: 15rem;
+    height: 4rem;
+    font-family: cocola;
+    font-size: 2rem;
+    border-radius: 1rem;
+    border: none;
+    color: white;
+    box-shadow: 0 8px 0 #008325;
+    background-color: #00c738;
+}
+#end button:hover {
+    box-shadow: 0 8px 0 #00c738;
+    background-color: #008325;
+}
+
+/* Ecran game over si le joueur donne trois mauvaise questions */
+#fd_screen h1 {
+    font-size: 8rem;
+}

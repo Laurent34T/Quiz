@@ -1,0 +1,48 @@
+/************ VARIABLES ******************************************************/
+:root {
+
+    --border_black: 2px solid black;
+    --border_red: 2px solid red;
+
+}
+
+/******************* RESET *******************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: cotton;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+/******************* DISPLAY *******************/
+.flex_row {
+    display: flex;
+    flex-direction: row;
+}
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify_between {
+    justify-content: space-between;
+}
+.justify_around {
+    justify-content: space-around;
+}
+.justify_center {
+    justify-content: center;
+}
+
+.align_center {
+    align-items: center;
+}
